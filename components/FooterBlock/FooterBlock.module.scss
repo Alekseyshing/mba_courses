@@ -1,0 +1,48 @@
+.footerOverlay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 23px;
+}
+
+.footerLeftBlock,
+.footerRightBlock {
+  flex: 1 1 45%;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.footerLeftBlock {
+  background: url("../../public/info-rectangle-red.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.footerRightBlock {
+  background: url("../../public/info-rectangle-dark.png") no-repeat center
+    center;
+  background-size: 100% 100%;
+}
+
+.overlay {
+  padding: 10px;
+}
+
+.footerHeader {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footerText {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 1020px) {
+  .footerLeftBlock,
+  .footerRightBlock {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,57 @@
+@import './variables';
+
+.moduleContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.leftModule,
+.rightModule {
+  display: flex;
+  gap: 82px;
+}
+
+.moduleSkills {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.module {
+  width: 100%;
+  padding: 16px;
+  // margin-bottom: 16px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 0;
+  }
+}
+
+
+.moduleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 13px 24px;
+  background-color: $expanded-text-color;
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.expanded .moduleHeader {
+  background-color: $expanded-bg-color;
+  color: $expanded-text-color;
+}
+
+@media (min-width: 768px) {
+  .moduleContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+

@@ -1,0 +1,20 @@
+$font-family: "Styrene A Web", Arial, Tahoma, sans-serif;
+$primary-color: #FF3535;
+$background-color: #fff;
+$text-color: #000;
+$expanded-bg-color: #FF3535;
+$expanded-text-color: #fff;
+
+@mixin box-sizing {
+  box-sizing: border-box;
+}
+
+@mixin font-face($name, $weight, $path) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$path}.woff2") format("woff2"),
+    url("#{$path}.woff") format("woff");
+    font-weight: $weight;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,92 @@
+@import './variables';
+
+*,
+*:before,
+*:after {
+  @include box-sizing;
+}
+
+@include font-face("Styrene A Web", 400, "/fonts/StyreneAWeb-Regular");
+@include font-face("Styrene A Web", 300, "/fonts/StyreneAWeb-Light");
+@include font-face("Styrene A Web", 500, "/fonts/StyreneAWeb-Medium");
+@include font-face("Styrene A Web", 700, "/fonts/StyreneAWeb-Bold");
+
+html {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 300;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  background: $background-color;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-image: url("../public/Dot.svg");
+  list-style-position: outside;
+  padding: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
+}
+
+@media (min-width: 0) {
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1020px) {
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+  }
+}
+
